@@ -4,7 +4,7 @@ import java.util.*;
 
 // IF you don't want to make a variable object specific you make make it STATIC
 // Then that variable will be same for all the object we will create for that class
-
+// We can use static variable by using Class name as well (as it will be same for all objects)
 
 // Main thing to remember : If we make any variable static , it will not be in heap memory, it goes into class loader memory.
 class Employee{
@@ -42,6 +42,14 @@ public class StaticKeyword {
 		 
 		 shyam.ceo = "Vdon";
 		 
+		 System.out.println("Employee details :");
+		 shyam.Details();
+		 System.out.println("Employee details :");
+		 bau.Details();
+		 
+		 
+		 // using static variable with the help of Class name (instead of object name itslef)
+		 Employee.ceo = "Vishu";
 		 System.out.println("Employee details :");
 		 shyam.Details();
 		 System.out.println("Employee details :");
