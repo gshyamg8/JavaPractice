@@ -5,6 +5,8 @@ import java.util.*;
 // IF you don't want to make a variable object specific you make make it STATIC
 // Then that variable will be same for all the object we will create for that class
 
+
+// Main thing to remember : If we make any variable static , it will not be in heap memory, it goes into class loader memory.
 class Employee{
 	int Eid, salary;
 	static String ceo;
