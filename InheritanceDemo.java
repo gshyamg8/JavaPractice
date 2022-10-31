@@ -3,12 +3,14 @@ import java.util.*;
 
 //Inheritance
 
-// IMP : Java doesn't support MULTIPLE INHERITANCE
+// IMP : Java doesn't support MULTIPLE INHERITANCE (Directly).
 
 
 // IS-A, HAS-A relation: 
 // The class in which we are creating object of another class has HAS-A relation 
 // And the class which is extending another class (for ex: CalcuMultiIN) has IS-A relation)
+
+
 
 class Calcu{   // super class / parent / base  of sub class CalcuIN
 	public Calcu() {
@@ -94,7 +96,7 @@ public class InheritanceDemo {
 		System.out.println("Addition is : " + resultadd);
 		System.out.println("SUbtraction is : "+ resultsub);
 		
-		CalcuMultiIN obj2 = new CalcuMultiIN();
+		CalcuMultiIN obj2 = new CalcuMultiIN(); 
 		System.out.println("*************************");
 		int resultadd1 = obj2.add(1,2,3);
 		int resultsub1 = obj2.sub(5,20);
@@ -105,3 +107,4 @@ public class InheritanceDemo {
 		
 	}
 }
+
